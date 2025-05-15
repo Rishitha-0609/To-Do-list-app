@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b18fdb;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-container {
+  width: 400px;
+  margin: 50px auto;
+  background: #c46199;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#add-task {
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#task-list li {
+  padding: 10px;
+  background: #acc95c;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#task-list li.completed {
+  text-decoration: line-through;
+  color: #78d8e3;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #414f89;
+  height: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease-in-out;
+}
+
+#progress-text {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
